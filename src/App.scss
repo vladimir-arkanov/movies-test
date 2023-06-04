@@ -1,3 +1,7 @@
-.starter {
-  font-size: 18px;
+@import './styles/reset.scss';
+
+.main-page {
+  display: block;
+  margin: auto;
+  max-width: 1000px;
 }

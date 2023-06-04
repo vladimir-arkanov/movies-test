@@ -1,0 +1,30 @@
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 20px 20px;
+  overflow: auto;
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__shows {
+    margin-bottom: 20px;
+
+    @media (min-width: 500px) {
+      &:not(:nth-child(2n)) {
+        margin-right: 15px;
+      }
+    }
+
+    @media (min-width: 825px) {
+      &:not(:nth-child(3n)) {
+        margin-right: 13px;
+      }
+    }
+  }
+}
